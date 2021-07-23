@@ -1,0 +1,143 @@
+/* STYLE SECTIONING TAGS */
+* {
+   margin: 0px;
+   padding: 0px;
+   justify-content: center;
+}
+
+body {
+ background-color: #1D3557; 
+ color: #F1FAEE;
+ font-family: 'Crimson Text', serif;
+ text-align: center;
+}
+
+/* STYLE TEXT */
+h1 {
+  color: #E63946;
+  font-family: 'Crimson Text', serif;
+  margin-bottom: 2%;
+  font-size: 4em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h2 {
+  color: #A8DADC;
+  font-family: 'Crimson Text', serif;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1%;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.headerText {
+  margin-bottom: 0.5%;
+}
+
+.link {
+  color: #A8DADC;
+}
+
+/* STYLE IMAGES */
+img {
+  width: 70%;
+  height: 90%;
+  box-sizing: border-box;
+  border: #A8DADC 5px solid;
+}
+
+/* Create the flex container */
+.flexContainer {
+  display: flex; /* Enable flexbox properties! This property defines the flexbox container */
+  flex-direction: row; /* Set your flex items which direction to go - if it should display left to right in a row or top to bottom in a column */
+  flex-wrap: nowrap; /* Tell your elements to fit all on one line with nowrap or to fit onto more than one line with wrap */
+}
+
+/* Style the flex items */
+.flexItem {
+  flex-basis: 70%; /* Set the width of each item */
+  margin: 1%; /* Put a little bit of space around each flex item */
+}
+
+@media screen and (max-width: 850px) {
+  .flexContainer {flex-wrap: wrap;}
+}
+
+/* STYLE NAV BAR */
+ul {
+  list-style-type: none;
+  background-color: #A8DADC;
+  overflow: hidden;
+  padding: 1em;
+  text-align: right;
+  top: 0;
+  margin-bottom: 3%;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+  color: #1D3557;
+  font-size: 1.3em;
+  padding: 1em;
+}
+
+li a:hover {
+  background-color: #F1FAEE;
+}
+
+/* STYLE RESOURCES */
+#resourcesUl {
+  list-style-type: circle; 
+  color: #F1FAEE;
+  padding: 1em;
+  text-align: center
+}
+
+.resourcesLi a:hover {
+  background-color: #457B9D;
+}
+
+
+/* STYLE BUTTONS */
+button {
+  border-radius: 10%;
+  padding: 1em;
+  font-family: 'Crimson Text', serif;
+  background-color: #E63946;
+  color: black;
+  border-style: none;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+
+button:hover {
+  transition-duration: 1.5s;
+  background-color: #F1FAEE;
+}
+
+/* STYLE FACT GENERATOR */
+#factGenerator {
+  text-align: center;
+  border: 5px #457B9D solid;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 4em;
+  margin-bottom: 1em; 
+}
+
+#fact {
+  font-size: 2em;
+  margin-left: 20%;
+  margin-right: 20%;
+}
